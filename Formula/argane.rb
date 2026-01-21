@@ -1,11 +1,9 @@
 class Argane < Formula
   desc "Your Kubernetes pod security detective"
   homepage "https://argane.krypton.ninja"
-  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.1-nightly.tar.gz"
-  version "0.0.1-nightly"
-  sha256 "3f1d51f55696adc41c0192d34220ec0a0934cec6e46bc37b29b4db097e314ed9"
+  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "c5a7a441e0ef580f610f20a0ada1f0b019a8a81df5bb456b880e26883626f9ab"
   license "Apache-2.0"
-  head "https://github.com/kkrypt0nn/argane.git", branch: "main"
 
   depends_on "go" => :build
 
@@ -13,11 +11,11 @@ class Argane < Formula
     ldflags = %W[
       -s
       -w
-      -X github.com/kkrypt0nn/argane/core.Version=#{version}
-      -X github.com/kkrypt0nn/argane/core.BuildDate=#{time.iso8601}
-      -X github.com/kkrypt0nn/argane/core.GitCommit=#{tap.user}
+      -X github.com/kkrypt0nn/argane/internal/buildinfo.Version=#{version}
+      -X github.com/kkrypt0nn/argane/internal/buildinfo.BuildDate=#{time.iso8601}
+      -X github.com/kkrypt0nn/argane/internal/buildinfo.GitCommit=#{tap.user}
     ].join(" ")
-    system "go", "build", *std_go_args(ldflags:), "./cmd/main.go"
+    system "go", "build", *std_go_args(ldflags:), "./cmd/argane/main.go"
   end
 
   test do
