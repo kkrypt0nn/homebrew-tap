@@ -7,8 +7,9 @@ class Argane < Formula
 
   bottle do
     root_url "https://github.com/kkrypt0nn/homebrew-tap/releases/download/argane-0.0.2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "ecc8392d0939077fb1558808231a0a5bd2564ce8ccf806a955f0dd3c20845214"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0114096ea7ad5a853cbb1de447238064c995dedd8de621e619d28945e64d03a8"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "937ba2703b366719c35711f69671a73f854927eb86747f89aaad305a14f7fd35"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8fc0f8d7c35a2e4c6168d1fc30ad2eb0501e3cab3af370c907e9feeec980b123"
   end
 
   depends_on "go" => :build
