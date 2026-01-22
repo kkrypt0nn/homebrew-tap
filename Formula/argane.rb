@@ -18,7 +18,7 @@ class Argane < Formula
     ldflags = %W[
       -s
       -w
-      -X github.com/kkrypt0nn/argane/internal/buildinfo.Version=v#{version}
+      -X github.com/kkrypt0nn/argane/internal/buildinfo.Version=#{version}
       -X github.com/kkrypt0nn/argane/internal/buildinfo.BuildDate=#{time.iso8601}
       -X github.com/kkrypt0nn/argane/internal/buildinfo.GitCommit=#{tap.user}
     ].join(" ")
@@ -28,6 +28,6 @@ class Argane < Formula
   test do
     output = shell_output("#{bin}/argane version")
     assert_match "Application:", output
-    assert_match "v#{version}", output
+    assert_match version.to_s, output
   end
 end
