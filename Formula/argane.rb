@@ -1,8 +1,8 @@
 class Argane < Formula
   desc "Your Kubernetes pod security detective"
   homepage "https://argane.krypton.ninja"
-  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "c5a7a441e0ef580f610f20a0ada1f0b019a8a81df5bb456b880e26883626f9ab"
+  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.4.tar.gz"
+  sha256 "0ea457ef630b9db2758155b2fdb65386b7996e302c89bb12be502bff664ed7b0"
   license "Apache-2.0"
 
   bottle do
