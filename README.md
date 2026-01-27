@@ -1,4 +1,4 @@
-# Kkrypt0nn Tap
+# Krypton's Homebrew Tap
 
 ## How do I install these formulae?
 
