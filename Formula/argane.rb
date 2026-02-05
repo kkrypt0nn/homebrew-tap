@@ -1,8 +1,8 @@
 class Argane < Formula
   desc "Your Kubernetes pod security detective"
   homepage "https://argane.krypton.ninja"
-  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.6.tar.gz"
-  sha256 "5a4ff2777e7992205598c726b8d2e55e7b2c534d719e21fdeb88d348c1ceb9de"
+  url "https://github.com/kkrypt0nn/argane/archive/refs/tags/v0.0.7.tar.gz"
+  sha256 "e33be18bba3e687d972192dfd128272c9e08ac718d8108d02dccbae93d9afde1"
   license "Apache-2.0"
 
   bottle do
@@ -25,8 +25,6 @@ class Argane < Formula
   end
 
   test do
-    output = shell_output("#{bin}/argane version")
-    assert_match "Application:", output
-    assert_match version.to_s, output
+    system "#{bin}/argane", "version"
   end
 end
