@@ -6,9 +6,9 @@ class Argane < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/kkrypt0nn/homebrew-tap/releases/download/argane-0.0.7"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2ec74f3a12c364a4f3483b31041c9a719a9d77a03a2bc29300c735ca6c6a7e1c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b0e59da32c5bba41a9acf0db4d8346afe40b4090a2bd7454bd24503257d89c13"
+    root_url "https://github.com/kkrypt0nn/homebrew-tap/releases/download/argane-0.0.8"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "29a26792cf3cc02ac99065dc43443ec2d6eb056be99337a4a74dbcf053d5f501"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "54f58229b8f58b6c1259100d1f99ab7edf950da08fc2a4da9e8fbc02d6f0d965"
   end
 
   depends_on "go" => :build
