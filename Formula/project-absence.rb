@@ -1,8 +1,8 @@
 class ProjectAbsence < Formula
   desc "Uncover the unseen"
   homepage "https://github.com/kkrypt0nn/project-absence"
-  url "https://github.com/kkrypt0nn/project-absence/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "b4835500db9315978fb9f2158f67d1bddf5e454f5ea27e342b2f825cb81fe329"
+  url "https://github.com/kkrypt0nn/project-absence/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "86f146a863850fe92d1708e2de0e5c8ca0fe2cbbf8d37be86c7fd4ac65dbf568"
   license "MIT"
 
   bottle do
