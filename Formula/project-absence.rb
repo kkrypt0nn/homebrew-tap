@@ -6,9 +6,9 @@ class ProjectAbsence < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/kkrypt0nn/homebrew-tap/releases/download/project-absence-1.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "9b7372e3782dad40af0f8b3dfe73a199975f04ffed188342135a536d1ab7adf6"
-    sha256 cellar: :any,                 x86_64_linux: "b2eb10b2936c213e6862527303961164feb56e6ca7b82aa1897dcf56f4f9c854"
+    root_url "https://github.com/kkrypt0nn/homebrew-tap/releases/download/project-absence-1.2.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "958d2234212405413dc14e1be8e306514d0564f6f4db0498b21a82d29b49fffd"
+    sha256 cellar: :any,                 x86_64_linux: "0abedaf0d1d209f63e2c7b3a2465d2df6c25de600e621796fe2e3bfddf0c2442"
   end
 
   depends_on "rust" => :build
